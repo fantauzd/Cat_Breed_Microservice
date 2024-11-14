@@ -47,6 +47,7 @@ function calculateScore(userCriteria, breed) {
 
 app.post('/cat-breed', (req, res) => {
     const userCriteria = req.body;
+    console.log(userCriteria);
 
     let bestMatch = null;
     let lowestScore = Infinity;
